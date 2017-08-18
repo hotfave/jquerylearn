@@ -1,0 +1,58 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="utf-8">  
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+<title></title>  
+<script type="text/javascript" src="../jquery-3.2.1.min.js"></script>  
+<link rel="stylesheet" type="text/css" href="style.css"></link>  
+</head>  
+<body>
+    <div id="main">  
+    <ul>  
+        <span>设计步骤</span>  
+        <li>11111</li>   
+    </ul>  
+    <ul>  
+        <span>步骤一</span>  
+        <li>22222</li>  
+        <li>22222</li>  
+        <li>22222</li>  
+    </ul>  
+    <ul>  
+        <span>步骤二</span>  
+        <li>33333</li>  
+        <li>33333</li>  
+        <li>33333</li>  
+        <li>33333</li>  
+        <li>33333</li>  
+    </ul>  
+    <ul>  
+        <span>步骤三</span>  
+        <li>44444</li>  
+        <li>44444</li>  
+    </ul>  
+    <ul>  
+        <span>步骤四</span>  
+        <li>55555</li>  
+        <li>55555</li>  
+        <li>55555</li>  
+    </ul>
+</div>  
+    <script type="text/javascript">  
+        $(function(){  
+            $('span').click(function(){  
+                if($(this).siblings('li').hasClass('on')){  
+                    $(this).siblings('li').slideUp(500).removeClass('on');
+                    $(this).removeClass('skin'); 
+                    
+                }else{  
+                    $(this).siblings('li').slideDown(500).addClass('on');  
+                    $(this).addClass('skin'); 
+                    
+                }  
+            });  
+        });  
+    </script>  
+</body>  
+</html>  

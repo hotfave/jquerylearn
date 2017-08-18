@@ -1,0 +1,37 @@
+body,ul,li{
+ 	margin: 0 auto;
+ 	padding: 0;
+ }
+ #main{
+	margin:100px auto;
+	width:800px;
+	height:400px
+ }  
+ ul,li{
+ 	list-style-type: none;
+ 	cursor: pointer;
+ 	color: white;
+ 	line-height: 28px;
+ 	text-align: center;
+ }  
+ ul{
+	 float:left
+ }  
+ ul span{
+	 background-color: #3285c0;
+	 display: block;
+	 width: 150px;
+	 height: 100px;
+	 font-weight: bold;
+	 line-height:100px; 	
+ }  
+ li{
+ 	background-color:#7ABEEA;
+	 display: none;
+ }  
+ li:hover{
+ 	background-color: orange;
+ }  
+ .skin{
+ 	background-color:#3db1ea;
+ }

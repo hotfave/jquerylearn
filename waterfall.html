@@ -18,15 +18,14 @@
                 $(this).append("<div style=\"width:90%;height:"+getRandom(200,300)+"px;margin:5px auto;background:#159;\"></div>"); 
             }); 
         } 
-         
+        //滚动内容 
         $(window).scroll(function(){ 
-            // 被卷去的高度 
+            // 滚动条拉动的高度 
             var scrollTop = document.body.scrollTop||document.documentElement.scrollTop; 
             // 页面高度 
             var pageHeight = $(document).height(); 
             // 可视区域高度 
             var viewHeight = $(window).height(); 
-            //alert(viewHeight); 
             //当滚动到底部时 
             if((scrollTop+viewHeight)>(pageHeight-20)){ 
                 if(scrollTop<1000){//防止无限制的增长 
@@ -39,12 +38,8 @@
             } 
         }); 
     }); 
-        /* 
-    * 获取指定范围随机数 
-    * @param min，最小取值 
-    * @param max，最大取值 
-    */ 
-     
+   
+    //定义getRandom,获取随机数 
     function getRandom(min,max){ 
         //x上限，y下限  
         var x = max;  
