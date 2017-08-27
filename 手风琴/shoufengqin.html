@@ -1,0 +1,64 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="utf-8">  
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+<title></title>  
+<script type="text/javascript" src="../jquery-3.2.1.min.js"></script>  
+<link rel="stylesheet" type="text/css" href="style.css"></link>  
+<script type="text/javascript">  
+    $(function(){  
+        $('span').click(function(){  
+            if($(this).siblings('li').hasClass('on')){  
+                $(this).siblings('li').slideUp(500).removeClass('on');
+                $(this).removeClass('skin'); 
+                
+            }else{  
+                $(this).siblings('li').slideDown(500).addClass('on');  
+                $(this).addClass('skin'); 
+                
+            }  
+        });  
+    });  
+</script>
+</head>  
+<body>
+    <div id="main">  
+    <ul>  
+        <span>前端</span>  
+        <li>html</li>
+        <li>css</li>
+        <li>JavaScript</li>
+        <li>...</li>   
+    </ul>  
+    <ul>  
+        <span>服务端</span>  
+        <li>PHP</li>  
+        <li>Python</li>  
+        <li>Linux</li>
+        <li>...</li>  
+    </ul>  
+    <ul>  
+        <span>移动端</span>  
+        <li>android</li>  
+        <li>IOS</li>  
+        <li>kotlin</li>  
+        <li>swift</li>  
+        <li>jquery mobile</li>  
+    </ul>  
+    <ul>  
+        <span>数据库</span>  
+        <li>SQL</li>  
+        <li>Mysql</li>
+        <li>SQLite</li>
+        <li>Redis</li>  
+    </ul>  
+    <ul>  
+        <span>UI</span>  
+        <li>动画特效</li>  
+        <li>APPUI设计</li>  
+        <li>设计工具</li>  
+    </ul>
+</div>    
+</body>  
+</html>  
